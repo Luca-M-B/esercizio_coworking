@@ -7,7 +7,7 @@ import com.example.esercizio_coworking.user.Utente;
 import java.util.List;
 
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione, Long> {
-    List<Prenotazione> findByDisponibileTrue();
+    List<Prenotazione> findByStato(StatoPrenotazione stato);
 
     List<Prenotazione> findByCreataDa(Utente utente);
 }
