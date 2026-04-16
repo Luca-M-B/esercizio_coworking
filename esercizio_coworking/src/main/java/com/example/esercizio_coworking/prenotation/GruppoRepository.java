@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.esercizio_coworking.user.Utente;
 
 public interface GruppoRepository extends JpaRepository <Gruppo, Long>{
-    List<Utente> findByGruppo(Gruppo gruppo);
+    List<Gruppo> findByManager(Utente manager);
 }

@@ -23,8 +23,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/sale")
 @RequiredArgsConstructor
 public class SalaController {
-    private SalaService salaService;
-
+    private final SalaService salaService;
+    
 @GetMapping
     public List<Sala> getAll() { return salaService.getAll(); }
 
