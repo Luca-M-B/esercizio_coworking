@@ -11,9 +11,13 @@ import lombok.RequiredArgsConstructor;
 public class SalaService {
     private final SalaRepository repo;
 
-    public List<Sala> getAll() { return repo.findAll(); }
-    
-    public List<Sala> getDisponibili() { return repo.findByDisponibileTrue(); }
+    public List<Sala> getAll() {
+        return repo.findAll();
+    }
+
+    public List<Sala> getDisponibili() {
+        return repo.findByDisponibileTrue();
+    }
 
     public Sala creaSala(Sala sala) {
         Sala s = new Sala();
@@ -31,5 +35,7 @@ public class SalaService {
         return repo.save(s);
     }
 
-    public void eliminaSala(Long id) { repo.deleteById(id); }
+    public void eliminaSala(Long id) {
+        repo.deleteById(id);
+    }
 }

@@ -22,7 +22,9 @@ public class Sala {
     @Column(nullable = false)
     private String nome;
 
+    @Column(nullable = false)
     private int capienza;
 
+    @Column(nullable = false)
     private boolean disponibile;
 }

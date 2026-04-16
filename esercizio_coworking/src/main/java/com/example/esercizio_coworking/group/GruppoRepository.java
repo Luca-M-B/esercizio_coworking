@@ -1,4 +1,4 @@
-package com.example.esercizio_coworking.prenotation;
+package com.example.esercizio_coworking.group;
 
 import java.util.List;
 
