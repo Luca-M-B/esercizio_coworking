@@ -1,4 +1,4 @@
-package com.example.esercizio_coworking.model;
+package com.example.esercizio_coworking.user;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "utenti")
+
 public class Utente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

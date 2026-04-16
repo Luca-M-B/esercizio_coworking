@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.esercizio_coworking.user.CustomUserDetailsService;
-import com.example.esercizio_coworking.model.Utente;
+import com.example.esercizio_coworking.user.Utente;
 import com.example.esercizio_coworking.user.UtenteRepository;
 
 import lombok.RequiredArgsConstructor;
