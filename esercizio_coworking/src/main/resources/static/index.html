@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworking Startup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Auth View -->
+        <main id="auth-view" class="view active">
+            <div class="glass-card auth-card">
+                <div class="logo-container">
+                    <div class="logo-icon"></div>
+                    <h2>CoworkingSpace</h2>
+                </div>
+                <p class="subtitle">Accedi al tuo spazio di lavoro</p>
+                
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="email">Username / Email</label>
+                        <input type="text" id="email" required placeholder="Inserisci il tuo username">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="Inserisci la tua password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Accedi</button>
+                    <p id="login-error" class="error-msg"></p>
+                </form>
+            </div>
+        </main>
+
+        <!-- Dashboard View -->
+        <main id="dashboard-view" class="view hidden">
+            <nav class="navbar glass-panel">
+                <div class="logo">CoworkingSpace</div>
+                <div class="nav-links">
+                    <button id="logout-btn" class="btn btn-outline">Logout</button>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <header class="page-header">
+                    <h1>Benvenuto nel tuo spazio</h1>
+                    <p>Prenota sale meeting, postazioni e gestisci il tuo tempo.</p>
+                </header>
+
+                <div class="grid-layout">
+                    <!-- Sale Disponibili -->
+                    <section class="card">
+                        <h3>Sale Disponibili</h3>
+                        <div id="sale-list" class="list-container">
+                            <p class="loading">Caricamento sale...</p>
+                        </div>
+                    </section>
+
+                    <!-- Le tue Prenotazioni -->
+                    <section class="card">
+                        <h3>Le tue Prenotazioni</h3>
+                        <div id="prenotazioni-list" class="list-container">
+                            <p class="loading">Caricamento prenotazioni...</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- Modal Prenotazione -->
+            <div id="booking-modal" class="modal hidden">
+                <div class="modal-content glass-card">
+                    <span class="close-btn">&times;</span>
+                    <h3>Prenota Sala</h3>
+                    <form id="booking-form">
+                        <input type="hidden" id="book-sala-id">
+                        <div class="input-group">
+                            <label>Sala Selezionata</label>
+                            <input type="text" id="book-sala-name" disabled>
+                        </div>
+                        <div class="input-group">
+                            <label for="book-start">Data e Ora Inizio</label>
+                            <input type="datetime-local" id="book-start" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="book-end">Data e Ora Fine</label>
+                            <input type="datetime-local" id="book-end" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Conferma Prenotazione</button>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
