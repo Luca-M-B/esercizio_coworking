@@ -8,6 +8,8 @@ public class EsercizioCoworkingApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EsercizioCoworkingApplication.class, args);
+
+		System.out.println("\n\n\t|| ---- --- -- -- PROGRAMMA RUNANTO -- -- --- ---- ||\n\n");
 	}
 
 }
