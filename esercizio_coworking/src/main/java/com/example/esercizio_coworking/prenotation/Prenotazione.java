@@ -19,8 +19,8 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 import com.example.esercizio_coworking.group.Gruppo;
+import com.example.esercizio_coworking.sala.Sala;
 import com.example.esercizio_coworking.user.Utente;
-import com.example.sala.Sala;
 
 @Data
 @AllArgsConstructor

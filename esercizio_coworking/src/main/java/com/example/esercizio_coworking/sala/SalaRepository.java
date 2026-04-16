@@ -1,4 +1,4 @@
-package com.example.sala;
+package com.example.esercizio_coworking.sala;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

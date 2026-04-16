@@ -1,4 +1,4 @@
-package com.example.sala;
+package com.example.esercizio_coworking.sala;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
