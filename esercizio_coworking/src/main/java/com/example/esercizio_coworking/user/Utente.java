@@ -1,4 +1,4 @@
-package com.example.esercizio_coworking.model;
+package com.example.esercizio_coworking.user;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "utenti")
 
 public class Utente {
     @Id
